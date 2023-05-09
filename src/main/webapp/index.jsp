@@ -112,7 +112,7 @@ a:hover {
     </script>
 </head>
 <body>
-	<video id="myVideo"></video>
+	<video id="myVideo" controls></video>
 	<div id="content">
 		<h2 id="title">Sangkyun's portfolio</h2>
 		<a href="<%=request.getContextPath()%>/main.do">&nbsp;&nbsp;&nbsp;visit&nbsp;&nbsp;&nbsp;</a><br />
