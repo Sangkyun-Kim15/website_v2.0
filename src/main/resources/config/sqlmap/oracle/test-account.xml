@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="kr.co.mlec.Account.AccountDAO">	
+	<select id="select" resultType="account">
+		SELECT 
+			username, 
+			password,
+			date_format(created_date, '%Y-%M-%D') as createdDate,
+			role,
+			is_deleted as isDeleted
+		FROM
+			test_db.account
+	</select>
+	
+	<select id="accountSelectPaging"  parameterType="criteria" resultType="account">
+		SELECT
+			*
+		FROM
+			(
+				SELECT 
+					username, 
+					password,
+					date_format(created_date, '%Y-%M-%D') as createdDate,
+					role,
+					is_deleted as isDeleted
+				FROM
+					test_db.account
+				<if test="keyword != null">
+					WHERE
+						username LIKE concat('%', #{keyword}, '%')
+				</if>
+				ORDER BY
+					username desc
+			) AS T1
+		LIMIT
+			#{skip}, #{amount}
+	</select>
+	
+	<select id="accountDetail" parameterType="String" resultType="account">
+		SELECT
+			username,
+			password,
+			date_format(created_date, '%Y-%M-%D') as createdDate,
+			role,
+			is_deleted as isDeleted
+		FROM
+			test_db.account
+		WHERE
+			username = #{userName}
+	</select>
+	
+	<select id="getAccountTotalNum" parameterType="criteria" resultType="int">
+		SELECT
+			COUNT(*)
+		FROM
+			test_db.account
+		<if test="keyword != null">
+			WHERE
+				username LIKE concat('%', #{keyword}, '%')
+		</if>
+	</select>
+</mapper>
