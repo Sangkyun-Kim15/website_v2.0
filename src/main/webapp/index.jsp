@@ -95,11 +95,24 @@ a:hover {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<script>
+        var video = document.getElementById('myVideo');
+        var source = document.createElement('source');
+
+        // Set the video source URL
+        source.src = 'file:///video/main/coverr-golden-gate-bridge-at-sunset-5420-original.mp4';
+        source.type = 'video/mp4';
+
+        // Append the source to the video element
+        video.appendChild(source);
+
+        // Play the video
+        video.play();
+    </script>
 </head>
 <body>
-	<video
-		src="/videos/main/coverr-golden-gate-bridge-at-sunset-5420-original.mp4"
-		muted autoplay loop></video>
+	<video id="myVideo"></video>
 	<div id="content">
 		<h2 id="title">Sangkyun's portfolio</h2>
 		<a href="<%=request.getContextPath()%>/main.do">&nbsp;&nbsp;&nbsp;visit&nbsp;&nbsp;&nbsp;</a><br />
