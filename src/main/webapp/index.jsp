@@ -24,8 +24,8 @@ video {
 }
 
 #title {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	font-size: 60px;
 	letter-spacing: -1px;
 	color: white;
@@ -36,7 +36,7 @@ video {
 
 a:link {
 	background-color: white;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	font-size: 20px;
 	color: black;
@@ -50,7 +50,7 @@ a:link {
 
 a:visited {
 	background-color: white;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	font-size: 20px;
 	letter-spacing: 1px;
@@ -64,7 +64,7 @@ a:visited {
 
 a:active {
 	background-color: white;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	font-size: 20px;
 	letter-spacing: 1px;
@@ -78,7 +78,7 @@ a:active {
 
 a:hover {
 	background-color: white;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	font-size: 20px;
 	color: black;
@@ -88,13 +88,14 @@ a:hover {
 	border-radius: 10px;
 	padding-bottom: 5px;
 	padding-top: 5px;
+	
 }
 
 
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 	<video

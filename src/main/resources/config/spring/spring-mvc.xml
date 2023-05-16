@@ -90,6 +90,8 @@
 
 	<mvc:view-controller path="/main.do"
 		view-name="main" />
+	<mvc:view-controller path="/board/test.do"
+		view-name="board/test" />
 	<mvc:view-controller path="/account/loginForm.do"
 		view-name="account/loginForm" />
 	<mvc:view-controller path="/board/insertForm.do"
