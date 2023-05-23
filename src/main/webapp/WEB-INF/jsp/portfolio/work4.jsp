@@ -26,21 +26,26 @@
 							<img class="img-responsive"
 								src="https://sangkyun-kim15.github.io/assets/img/train.png"
 								alt="">
-							<h3>About</h3>
-							<p>This was the project from CS440 Intro Artificial Intelligence. 
-							The goal was to create a bot that can play minesweeper.</p>
-							<h3>Built</h3>
-							<p>Use this area to describe your project. Lorem ipsum dolor
-								sit amet, consectetur adipisicing elit. Est blanditiis dolorem
-								culpa incidunt minus dignissimos deserunt repellat aperiam quasi
-								sunt officia expedita beatae cupiditate, maiores repudiandae,
-								nostrum, reiciendis facere nemo!</p>
-							<h3>Getting Started</h3>
-							<p>Use this area to describe your project. Lorem ipsum dolor
-								sit amet, consectetur adipisicing elit. Est blanditiis dolorem
-								culpa incidunt minus dignissimos deserunt repellat aperiam quasi
-								sunt officia expedita beatae cupiditate, maiores repudiandae,
-								nostrum, reiciendis facere nemo!</p>
+							<div class="about">
+								<h3>About</h3>
+								<p>This was the project from CS335 Principles of Information and Data Management. 
+								The goal was to implement a train reservation web application in Java.</p>
+								<h4>Account functionality</h4>
+								<p>Register, login, logout</p>
+								<h4>Browsing and search functionality</h4>
+								<p>Search schedule by condition, sort by different criteria</p>
+								<h4>Reservations</h4>
+								<p>Make a reservation for a specific route, Get discount, Cancel reservation, View reservation history</p>
+								<h4>Admin functions</h4>
+								<p>Manage information, Sales report per month, list of reservations by specific condition,
+								list of revenue per line or customer</p>
+								<h4>Customer representative</h4>
+								<p>edit train schedule, manage customer’s questions</p>
+							</div>
+							<div class="built">
+								<h3>Built</h3>
+								<p>Java, JSTL, MySQL, Tomcat, AWS EC2, RDS</p>
+							</div>
 							<ul class="list-inline">
 								<li>Date: July 2014</li>
 								<li>Category: Graphic Design</li>

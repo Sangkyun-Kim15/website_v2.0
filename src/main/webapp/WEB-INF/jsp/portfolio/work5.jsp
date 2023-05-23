@@ -24,23 +24,17 @@
 							<p class="item-intro text-muted">Lorem ipsum dolor sit amet
 								consectetur.</p>
 							<img class="img-responsive"
-								src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502""
+								src="${pageContext.request.contextPath}/resources/img/maze.png"
 								alt="">
-							<h3>About</h3>
-							<p>This was the project from CS440 Intro Artificial Intelligence. 
-							The goal was to create a bot that can play minesweeper.</p>
-							<h3>Built</h3>
-							<p>Use this area to describe your project. Lorem ipsum dolor
-								sit amet, consectetur adipisicing elit. Est blanditiis dolorem
-								culpa incidunt minus dignissimos deserunt repellat aperiam quasi
-								sunt officia expedita beatae cupiditate, maiores repudiandae,
-								nostrum, reiciendis facere nemo!</p>
-							<h3>Getting Started</h3>
-							<p>Use this area to describe your project. Lorem ipsum dolor
-								sit amet, consectetur adipisicing elit. Est blanditiis dolorem
-								culpa incidunt minus dignissimos deserunt repellat aperiam quasi
-								sunt officia expedita beatae cupiditate, maiores repudiandae,
-								nostrum, reiciendis facere nemo!</p>
+							<div class="about">
+								<h3>About</h3>
+								<p>This was the project from CS440 Intro Artificial Intelligence. Implementing a bot
+								using DFS, BFS, and A* algorithms.</p>
+							</div>
+							<div class="built">
+								<h3>Built</h3>
+								<p>Python, NumPy</p>
+							</div>
 							<ul class="list-inline">
 								<li>Date: July 2014</li>
 								<li>Category: Graphic Design</li>

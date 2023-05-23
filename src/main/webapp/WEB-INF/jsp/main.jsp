@@ -28,8 +28,8 @@ body {
 
 .navbar-default {
 	border-color: transparent;
-	background: linear-gradient(rgba(224, 204, 200, 1.0),
-		rgba(224, 204, 200, 0.90)); /* bottom, image */
+	background: linear-gradient(rgba(143, 124, 124, 1.0),
+		rgba(143, 124, 124, 0.90)); /* bottom, image */
 }
 
 .img-centered {
@@ -51,8 +51,8 @@ h3 {
 }
 
 header {
-	background: linear-gradient(rgba(224, 204, 200, 1.0),
-		rgba(224, 204, 200, 0.90)); /* bottom, image */
+	background: linear-gradient(rgba(143, 124, 124, 1.0),
+		rgba(143, 124, 124, 0.90)); /* bottom, image */
 	background-size: cover;
 	background-position: center top;
 	width: 100%;
@@ -126,8 +126,18 @@ header {
 }
 
 .portfolio-item {
-	max-width: 400px;
+	height: 300px;
 	overflow:hidden;
+}
+
+.portfolio-caption {
+	height: 30%;
+}
+
+.img-responsive {
+	width: 100%;
+	height: 70%;
+	object-fit:cover;
 }
 
 .portfolio-modal .modal-content {
@@ -218,6 +228,11 @@ header {
 	padding: 2% 0;
 }
 
+.sns-img {
+	width: 30px;
+	height: 30px;
+}
+
 footer {
 	padding: 25px 0;
 	text-align: center;
@@ -244,22 +259,11 @@ ul.social-buttons {
 
 ul.social-buttons li a {
 	display: block;
-	width: 40px;
-	height: 40px;
-	border-radius: 100%;
-	font-size: 20px;
 	line-height: 40px;
 	outline: 0;
-	color: #fff;
-	background-color: #222;
 	-webkit-transition: all .3s;
 	-moz-transition: all .3s;
 	transition: all .3s;
-}
-
-ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active
-	{
-	background-color: #1ee2e7;
 }
 
 .btn:focus, .btn:active, .btn.active, .btn:active:focus {
@@ -290,7 +294,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand page-scroll" href="#intro">SK</a>
+				<a class="navbar-brand page-scroll" href="#intro" style="color: rgb(84, 82, 82)">SK</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -298,9 +302,9 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="hidden active"><a href="#page-top"></a></li>
-					<li class=""><a class="page-scroll" href="#about">About</a></li>
-					<li class=""><a class="page-scroll" href="#portfolio">Portfolio</a></li>
-					<li class=""><a class="page-scroll" href="#contact">Contact</a></li>
+					<li class=""><a class="page-scroll" href="#about" style="color: rgb(84, 82, 82)">About</a></li>
+					<li class=""><a class="page-scroll" href="#portfolio" style="color: rgb(84, 82, 82)">Portfolio</a></li>
+					<li class=""><a class="page-scroll" href="#contact" style="color: rgb(84, 82, 82)">Contact</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -311,7 +315,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	<header>
 		<div id="intro" class="intro">
 			<h1>sangkyun kim</h1>
-			<h2>software developer &amp; gamer</h2>
+			<h2>software developer &amp; Cinéphile</h2>
 		</div>
 	</header>
 
@@ -320,10 +324,12 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 		<div class="about-content">
 			<h2>About</h2>
 			<p>I am Sangkyun, a software developer from the state of California. I am happy when my code work stably. 
-			I like a clear message. My favorite language is Java and Python.
+			I like a clear message. My favorite language is Java and Python. I love to watch movies. I have watched more
+			than 1000 movies.
 			</p>
 		</div>
 	</section>
+	
 	
 	<!-- portfolio Section -->
 	<section id="portfolio" class="portfolio">
@@ -344,7 +350,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 					</a>
 					<div class="portfolio-caption">
 						<h4>Minesweeper</h4>
-						<p class="text-muted">Graphic Design</p>
+						<p class="text-muted">Python project</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
@@ -355,7 +361,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 					</a>
 					<div class="portfolio-caption">
 						<h4>Image Colorizer</h4>
-						<p class="text-muted">Website Design</p>
+						<p class="text-muted">Python project</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
@@ -366,7 +372,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 					</a>
 					<div class="portfolio-caption">
 						<h4>Chess</h4>
-						<p class="text-muted">Website Design</p>
+						<p class="text-muted">Java and Python project</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
@@ -377,7 +383,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 					</a>
 					<div class="portfolio-caption">
 						<h4>Train Reservation System</h4>
-						<p class="text-muted">Website Design</p>
+						<p class="text-muted">Java Web project</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
@@ -388,7 +394,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 					</a>
 					<div class="portfolio-caption">
 						<h4>Maze on fire</h4>
-						<p class="text-muted">Website Design</p>
+						<p class="text-muted">Python project</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
@@ -398,8 +404,8 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 						class="img-responsive" alt="">
 					</a>
 					<div class="portfolio-caption">
-						<h4>Dreams</h4>
-						<p class="text-muted">Website Design</p>
+						<h4>Personal web site</h4>
+						<p class="text-muted">Java web project</p>
 					</div>
 				</div>
 			</div>
@@ -456,6 +462,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	
 	
 	<a href="<%=request.getContextPath()%>/board/test.do">test</a>
+	<a href="<%=request.getContextPath()%>/board/select.do">test</a>
 	
 	<footer>
 		<div class="container">
@@ -465,9 +472,9 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 				</div>
 				<div class="col-md-4">
 					<ul class="list-inline social-buttons">
-						<li><a href="https://www.facebook.com/sk.kim.58152"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/sangkyunkim/"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://github.com/Sangkyun-Kim15"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://www.facebook.com/sk.kim.58152"><img class="sns-img" src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_960_720.png"></a></li>
+						<li><a href="https://www.linkedin.com/in/sangkyunkim/"><img class="sns-img" src="https://cdn.pixabay.com/photo/2017/11/10/05/05/linkedin-2935407_960_720.png"></a></li>
+						<li><a href="https://github.com/Sangkyun-Kim15"><img class="sns-img" src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"></a></li>
 					</ul>
 				</div>
 				<div class="col-md-4">

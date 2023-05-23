@@ -26,21 +26,14 @@
 							<img class="img-responsive"
 								src=""
 								alt="">
-							<h3>About</h3>
-							<p>This was the project from CS440 Intro Artificial Intelligence. 
-							The goal was to create a bot that can play minesweeper.</p>
-							<h3>Built</h3>
-							<p>Use this area to describe your project. Lorem ipsum dolor
-								sit amet, consectetur adipisicing elit. Est blanditiis dolorem
-								culpa incidunt minus dignissimos deserunt repellat aperiam quasi
-								sunt officia expedita beatae cupiditate, maiores repudiandae,
-								nostrum, reiciendis facere nemo!</p>
-							<h3>Getting Started</h3>
-							<p>Use this area to describe your project. Lorem ipsum dolor
-								sit amet, consectetur adipisicing elit. Est blanditiis dolorem
-								culpa incidunt minus dignissimos deserunt repellat aperiam quasi
-								sunt officia expedita beatae cupiditate, maiores repudiandae,
-								nostrum, reiciendis facere nemo!</p>
+							<div class="about">
+								<h3>About</h3>
+								<p>This is a personal project. Java web application.</p>
+							</div>
+							<div class="built">
+								<h3>Built</h3>
+								<p>Java, Spring, Maven, JSTL, Jquuery, BootStrap, mybatis, MySQL, ApacheTomcat, Jenkins</p>
+							</div>
 							<ul class="list-inline">
 								<li>Date: July 2014</li>
 								<li>Category: Graphic Design</li>

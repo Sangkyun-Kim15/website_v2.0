@@ -30,11 +30,11 @@ video {
 	letter-spacing: -1px;
 	color: white;
 	line-height: 30px;
-	margin: 0px 0px 30px;
+	margin: 0px 0px 40px;
 	text-transform: uppercase;
 }
 
-a:link {
+a {
 	background-color: white;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
@@ -44,51 +44,8 @@ a:link {
 	text-transform: uppercase;
 	text-decoration-line: none;
 	border-radius: 10px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-}
-
-a:visited {
-	background-color: white;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	font-size: 20px;
-	letter-spacing: 1px;
-	color: black;
-	text-transform: uppercase;
-	text-decoration-line: none;
-	border-radius: 10px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-}
-
-a:active {
-	background-color: white;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	font-size: 20px;
-	letter-spacing: 1px;
-	color: black;
-	text-transform: uppercase;
-	text-decoration-line: none;
-	border-radius: 10px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-}
-
-a:hover {
-	background-color: white;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	font-size: 20px;
-	color: black;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	text-decoration-line: none;
-	border-radius: 10px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-	
+	padding-bottom: 7px;
+	padding-top: 7px;
 }
 
 

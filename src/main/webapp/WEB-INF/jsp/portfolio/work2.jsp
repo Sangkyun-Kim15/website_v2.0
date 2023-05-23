@@ -44,7 +44,7 @@
 							</div>
 							<div class="built">
 								<h3>Built</h3>
-								<p>Python</p>
+								<p>Python, NumPy</p>
 							</div>
 							<ul class="list-inline">
 								<li>Date: July 2014</li>

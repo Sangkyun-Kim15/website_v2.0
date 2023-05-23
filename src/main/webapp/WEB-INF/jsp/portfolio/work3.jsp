@@ -28,23 +28,12 @@
 								alt="">
 							<div class="about">
 								<h3>About</h3>
-								<p>This was the project from CS440 Intro Artificial Intelligence. 
-								The goal was to convert greyscale images to two colorized versions of images 
-								by using K-means clustering and neural networks.</p>
-								<h4>K-means clustering verion (Basic agent)</h4>
-								<p>Select 5 random pixels for grouping.
-								Grouping was based on the distance between the target pixel and each centroid.
-								Using euclidean distance to calculate the distance.</p>
-								<h4>Neural Networks version (Advanced agent)</h4>
-								<p>A Feed-Forwarding 3 layers neural networks. 
-								9 nodes in the input layer (3x3 patch = 9 pixels).
-								5 nodes in the hidden layer.
-								3 nodes in the output layer (pixel has R, G, B).
-								Using sigmoid function as activation function.</p>
+								<p>This was the project from CS213 Software Methodology. The goal was to implement a two-player, 
+								test-based chess game in Java and Python by using OOP(Object-oriented program).</p>
 							</div>
 							<div class="built">
 								<h3>Built</h3>
-								<p>Python</p>
+								<p>Java</p>
 							</div>
 							<ul class="list-inline">
 								<li>Date: July 2014</li>

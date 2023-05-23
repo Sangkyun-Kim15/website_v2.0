@@ -44,7 +44,7 @@
 							</div>
 							
 							<h3>Built</h3>
-							<p>Python, Pygame</p>
+							<p>Python, Pygame, NumPy</p>
 							<ul class="list-inline">
 								<li>Date: July 2014</li>
 								<li>Category: Graphic Design</li>
