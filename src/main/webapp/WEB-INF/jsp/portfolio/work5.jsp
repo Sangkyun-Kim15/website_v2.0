@@ -39,10 +39,11 @@
 								<li>Date: July 2014</li>
 								<li>Category: Graphic Design</li>
 							</ul>
-							<button type="button" class="btn btn-primary"
+							<button type="button" class="btn btn-xl"
 								data-dismiss="modal">
 								<i class="fa fa-times"></i> Close Project
 							</button>
+							<a href="https://github.com/Norden-Tenzin/440ArtificialIntelligence/tree/master/MAZE%20ON%20FIRE" target="_blank">Code</a>
 						</div>
 					</div>
 				</div>

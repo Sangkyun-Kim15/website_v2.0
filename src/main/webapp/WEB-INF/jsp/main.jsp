@@ -337,20 +337,19 @@ ul.social-buttons li a {
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 class="section-heading">Portfolio</h2>
-					<h3 class="section-subheading text-muted">Lorem ipsum dolor
-						sit amet consectetur.</h3>
+					<h3 class="section-subheading text-muted">This is my previous work.</h3>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="#portfolioModal1" class="portfolio-link"
+					<a href="#portfolioModal6" class="portfolio-link"
 						data-toggle="modal"> <img
-						src="https://sangkyun-kim15.github.io/assets/img/mine.png"
+						src="${pageContext.request.contextPath}/resources/img/blog_img.png"
 						class="img-responsive" alt="">
 					</a>
 					<div class="portfolio-caption">
-						<h4>Minesweeper</h4>
-						<p class="text-muted">Python project</p>
+						<h4>Personal web site</h4>
+						<p class="text-muted">Java web project</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
@@ -365,25 +364,14 @@ ul.social-buttons li a {
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="#portfolioModal3" class="portfolio-link"
+					<a href="#portfolioModal1" class="portfolio-link"
 						data-toggle="modal"> <img
-						src="https://sangkyun-kim15.github.io/assets/img/chess.png"
+						src="https://sangkyun-kim15.github.io/assets/img/mine.png"
 						class="img-responsive" alt="">
 					</a>
 					<div class="portfolio-caption">
-						<h4>Chess</h4>
-						<p class="text-muted">Java and Python project</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="#portfolioModal4" class="portfolio-link"
-						data-toggle="modal"> <img
-						src="https://sangkyun-kim15.github.io/assets/img/train.png"
-						class="img-responsive" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>Train Reservation System</h4>
-						<p class="text-muted">Java Web project</p>
+						<h4>Minesweeper</h4>
+						<p class="text-muted">Python project</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
@@ -398,14 +386,25 @@ ul.social-buttons li a {
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="#portfolioModal6" class="portfolio-link"
+					<a href="#portfolioModal4" class="portfolio-link"
 						data-toggle="modal"> <img
-						src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502"
+						src="https://sangkyun-kim15.github.io/assets/img/train.png"
 						class="img-responsive" alt="">
 					</a>
 					<div class="portfolio-caption">
-						<h4>Personal web site</h4>
-						<p class="text-muted">Java web project</p>
+						<h4>Train Reservation System</h4>
+						<p class="text-muted">Java Web project</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 portfolio-item">
+					<a href="#portfolioModal3" class="portfolio-link"
+						data-toggle="modal"> <img
+						src="https://sangkyun-kim15.github.io/assets/img/chess.png"
+						class="img-responsive" alt="">
+					</a>
+					<div class="portfolio-caption">
+						<h4>Chess</h4>
+						<p class="text-muted">Java and Python project</p>
 					</div>
 				</div>
 			</div>
@@ -418,8 +417,7 @@ ul.social-buttons li a {
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 class="section-heading">Contact Us</h2>
-					<h3 class="section-subheading text-muted">Lorem ipsum dolor
-						sit amet consectetur.</h3>
+					<h3 class="section-subheading text-muted">For the more information...</h3>
 				</div>
 			</div>
 			<div class="row">
@@ -460,15 +458,11 @@ ul.social-buttons li a {
 		</div>
 	</section>
 	
-	
-	<a href="<%=request.getContextPath()%>/board/test.do">test</a>
-	<a href="<%=request.getContextPath()%>/board/select.do">test</a>
-	
 	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<span class="copyright">Copyright © Your Website 2014</span>
+					<span class="copyright">Copyright © Your Website 2023</span>
 				</div>
 				<div class="col-md-4">
 					<ul class="list-inline social-buttons">

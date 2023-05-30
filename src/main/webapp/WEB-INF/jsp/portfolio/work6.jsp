@@ -5,6 +5,8 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+<script type="text/javascript">
+</script>
 </head>
 <body>
 	<div class="portfolio-modal modal fade" id="portfolioModal6"
@@ -21,10 +23,9 @@
 						<div class="modal-body">
 							<!-- Project Details Go Here -->
 							<h2>Blog</h2>
-							<p class="item-intro text-muted">Lorem ipsum dolor sit amet
-								consectetur.</p>
+							<p class="item-intro text-muted">Java web application</p>
 							<img class="img-responsive"
-								src=""
+								src="${pageContext.request.contextPath}/resources/img/blog_img.png"
 								alt="">
 							<div class="about">
 								<h3>About</h3>
@@ -38,10 +39,12 @@
 								<li>Date: July 2014</li>
 								<li>Category: Graphic Design</li>
 							</ul>
-							<button type="button" class="btn btn-primary"
+							<button type="button" class="btn btn-xl"
 								data-dismiss="modal">
 								<i class="fa fa-times"></i> Close Project
-							</button>
+							</button>&nbsp;
+							<a href="<%=request.getContextPath()%>/board/select.do" target="_blank">Website</a>&nbsp;
+							<a href="https://github.com/Sangkyun-Kim15/website_v2.0" target="_blank">Code</a>
 						</div>
 					</div>
 				</div>

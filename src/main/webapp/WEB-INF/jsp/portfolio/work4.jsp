@@ -50,10 +50,11 @@
 								<li>Date: July 2014</li>
 								<li>Category: Graphic Design</li>
 							</ul>
-							<button type="button" class="btn btn-primary"
+							<button type="button" class="btn btn-xl"
 								data-dismiss="modal">
 								<i class="fa fa-times"></i> Close Project
 							</button>
+							<a href="https://github.com/Sangkyun-Kim15/Principles-of-Information-and-Data-Management" target="_blank">Code</a>
 						</div>
 					</div>
 				</div>

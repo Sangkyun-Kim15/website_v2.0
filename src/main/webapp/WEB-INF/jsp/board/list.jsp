@@ -7,32 +7,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Blog test</title>
 <style type="text/css">
-.pageInfo {
-	list-style: none;
-	display: inline-block;
-	margin: 50px 0 0 100px;
-}
 
-.pageInfo li {
-	float: left;
-	font-size: 20px;
-	margin-left: 18px;
-	padding: 7px;
-	font-weight: 500;
-}
 
 </style>
 <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/board_list.css">
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <!-- Optional theme -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <!-- Latest compiled and minified JavaScript -->
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 <!-- boardDetail.js file -->
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/board/boardDetail.js"></script>
 <!-- commen_list.js file -->
@@ -51,25 +41,30 @@ $(document).ready(function() {
 });
 </script>
 </head>
-<body>
+<body style="background-image: url('${pageContext.request.contextPath}/resources/img/background.png');">
 	<jsp:include page="../include/menu.jsp" />
 	<jsp:include page="../board/comment_update_modal.jsp" />
+	
 	<div class="table_wrap">
+		<jsp:include page="../include/searching.jsp" >
+			<jsp:param value="board" name="type"/>
+		</jsp:include>
 		<input type="hidden" id="username" value='${sessionScope.username}'/>
 		<input type="hidden" id="role" value='${sessionScope.role}'/>
-		<table class="table">
+		<table class="list_table">
+			<thead>
 			<tr>
-				<td><strong>No</strong></td>
-				<td><strong>Title</strong></td>
-				<td><strong>Writer</strong></td>
-				<td><strong>Date</strong></td>
+				<td><h5>No</h5></td>
+				<td><h5>Title</h5></td>
+				<td><h5>Writer</h5></td>
+				<td><h5>Date</h5></td>
 			</tr>
+			</thead>
 			<c:forEach var="board" items="${list}">
 				<input type="hidden" id="boardNo" value='<c:out value="${board.boardNo}"/>'/>
-				
 				<tr>
 					<td><c:out value="${board.boardNo}"></c:out></td>
-					<td><a onclick="boardDetail(${board.boardNo}); commentList(${board.boardNo})"><c:out
+					<td><a style="color: white; text-decoration: none; cursor: pointer;" onclick="boardDetail(${board.boardNo}); commentList(${board.boardNo})"><c:out
 								value="${board.title}"></c:out></a></td>
 					<td><c:out value="${board.writer}"></c:out></td>
 					<td><c:out value="${board.regDate}"></c:out></td>
@@ -84,19 +79,16 @@ $(document).ready(function() {
 			<c:when test="${empty sessionScope.username}">
 			</c:when>
 			<c:otherwise>
-				<a href="<%=request.getContextPath()%>/board/insertForm.do">Add</a>
+				<a class="board-add-btn" href="<%=request.getContextPath()%>/board/insertForm.do">post</a>
 			</c:otherwise>
 		</c:choose>
 
 		<jsp:include page="../include/paging.jsp" >
 			<jsp:param value="board" name="type"/>
 		</jsp:include>
-		<jsp:include page="../include/searching.jsp" >
-			<jsp:param value="board" name="type"/>
-		</jsp:include>
 		
-		<div id="detail_wrap"></div>
-		<div id="commentList"></div>
 	</div>
+	<div class="detail_wrap" id="detail_wrap"></div>
+	<div class="commentList"  id="commentList"></div>
 </body>
 </html>

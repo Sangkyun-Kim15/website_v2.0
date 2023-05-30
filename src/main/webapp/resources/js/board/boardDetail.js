@@ -29,42 +29,52 @@ function boardDetail(input) {
 	})
 	.done(function(response) {
 		let html = "";
+		html += "<div class='blog-container'>";
+		html += 	"<div class='blog-header'>";
+		html += 		"<div class='blog-cover'>";
+		html += 			"<div class='blog-writer'>";
+		html += 				"<h4>"+ response.writer +"</h4>";
+		html += 			"</div>";
+		html += 		"<div class='blog-body'>";
+		html += 			"<div class='blog-title'>";
+		html += 				"<h1>"+ response.title  +"</h1>";
+		html += 			"</div>";
+		html += 		"</div>";
+		html += 	"</div>";
+		html += 	"<hr>";
 		
-		html += "<div>";
-		html += 	"<table class = 'table'>";
-		html += 		"<tr>";
-		html += 			"<th>NO</th>";
-		html += 			"<td>"+ response.boardNo +"</td>";
-		html += 			"<th>Writer</th>";
-		html += 			"<td>"+ response.writer +"</td>";
-		html += 			"<th>Title</th>";
-		html += 			"<td>"+ response.title +"</td>";
-		html += 			"<th>Date</th>";
-		html += 			"<td>"+ response.regDate +"</td>";
-		html += 		"</tr>";
-		html += 		"<tr>";
-		html += 			"<th>Content</th>";
-		html += 			"<td>"+ response.content +"</td>";
-		html += 		"</tr>";
-		html += 	"</table>";
-		html += "</div>";
+		html += 		"<div class='blog-content'>";
+		html += 			"<p>"+ response.content +"</p>";
+		html += 		"</div>";
+		html += 	"</div>";
+		html += 	"<hr>";
 		
+		html += 	"<div class='blog-footer'>";
+		html += 		"<ul>";
+		html += 			"<li class='published-date'><h5>"+ response.regDate +"</h5></li>";
 		if(username == response.writer || role == "ADMIN") {
-			html += "<a href=" + getContextPath() + "/board/updateForm.do?boardNo="+ data +"&pageNum=" + pageNum +"&amount=" + amount +"&keyword=" + keyword +">Update</a>";
-			html += "<a href=" + getContextPath() + "/board/delete.do?boardNo="+ data +"&pageNum=" + pageNum +"&amount=" + amount +"&keyword=" + keyword +">Delete</a>";
+			html += 		"<li class='board_update'><a href=" + getContextPath() + "/board/updateForm.do?boardNo="+ data +"&pageNum=" + pageNum +"&amount=" + amount +"&keyword=" + keyword +">Update</a></li>&nbsp&nbsp";
+			html += 		"<li class='board_delete'><a href=" + getContextPath() + "/board/delete.do?boardNo="+ data +"&pageNum=" + pageNum +"&amount=" + amount +"&keyword=" + keyword +">Delete</a></li>";
 			
+		} else {
+			html += 		"<li></li>";
+			html += 		"<li></li>";
 		}
+		html += 		"</ul>";
+		html += 		"<br>";
 		if(username != "") {
-			html += "<form method='post' action='"+ getContextPath() +"/comment/insert.do'>";
-			html += 	"<input type='hidden' name='bId' value='"+ data + "'class='form-control'/>";
-			html += 	"<input type='hidden' name='pageNum' value='"+ pageNum + "'class='form-control'/>";
-			html += 	"<input type='hidden' name='amount' value='"+ amount + "'class='form-control'/>";
-			html += 	"<input type='hidden' name='keyword' value='"+ keyword + "'class='form-control'/>";
-			html += 	"<textarea name='content'></textarea>";
-			html += 	"<input type='hidden' name='user' class='form-control' value='"+ username +"'/>";
-			html += 	"<button type='submit' class='btn btn-primary' id='cmt_reg_btn'> add</button>";
-			html += "</form>";
+			html += 	"<form method='post' action='"+ getContextPath() +"/comment/insert.do'>";
+			html += 		"<input type='hidden' name='bId' value='"+ data + "'class='form-control'/>";
+			html += 		"<input type='hidden' name='pageNum' value='"+ pageNum + "'class='form-control'/>";
+			html += 		"<input type='hidden' name='amount' value='"+ amount + "'class='form-control'/>";
+			html += 		"<input type='hidden' name='keyword' value='"+ keyword + "'class='form-control'/>";
+			html += 		"<input type='text' class='comment_text' name='content' maxlength='200' placeholder='200 characters only'></input>&nbsp&nbsp";
+			html += 		"<input type='hidden' name='user' class='form-control' value='"+ username +"'/>";
+			html += 		"<button type='submit' class='cmt-add-btn' id='cmt_reg_btn'> add</button>";
+			html += 	"</form>";
 		}
+		html += 	"</div>";
+		html += "</div>";
 		
 		$("#detail_wrap").html(html);
 	});

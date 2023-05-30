@@ -17,7 +17,6 @@
 <!-- get_context_path.js file -->
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/include/get_context_path.js"></script>
 
-<link href="${pageContext.request.contextPath}/resources/css/aLink.css" rel="stylesheet" type="text/css">
 <link href="${pageContext.request.contextPath}/resources/css/menuBar.css" rel="stylesheet" type="text/css">
 <title>Insert title here</title>
 </head>

@@ -32,12 +32,13 @@ function commentList(input) {
 			html += 		"<h5 id='commentText_" + comment.cId + "' style='display: inline'>" + comment.content +"</h5>";
 			html += 		"<span id='ccCount_" + comment.cId + "' style='color: red'> ["+comment.repNum+"]</span>";
 			html += 	"</div>";
-			html += 	"<h5>" + comment.isDeleted +"</h5>";
-			html += 	"<span style='cursor: pointer; color: blue' class='reCommentBtn' id='reCommentBtn_"+ comment.cId +"'>Reply </span>";
-			html += 	"<span style='display:none; cursor: pointer; color: blue' class='reCommentCloseBtn' id='reCommentCloseBtn_"+ comment.cId +"'>Close </span>";
+			// html += 	"<h5>" + comment.isDeleted +"</h5>";
+			html += 	"<br>";
+			html += 	"<span style='cursor: pointer;' class='reCommentBtn' id='reCommentBtn_"+ comment.cId +"'>Reply </span>";
+			html += 	"<span style='display:none; cursor: pointer;' class='reCommentCloseBtn' id='reCommentCloseBtn_"+ comment.cId +"'>Close </span>";
 			if(username == comment.user || role == "ADMIN") {
-	            html += 	"<span style='cursor: pointer; color: blue' class='commentMod' data-toggle='modal' data-target='#myModal'>Edit </span>";
-	            html += 	"<span style='cursor: pointer; color: blue' class='commentDel'>Delete</span>";
+	            html += 	"<span style='cursor: pointer;' class='commentMod' data-toggle='modal' data-target='#myModal'>Edit </span>";
+	            html += 	"<span style='cursor: pointer;' class='commentDel'>Delete</span>";
 			}
 			html += 	"<hr>";
 			html += 	"<div class='mx-4 reCommentDiv' id='reCommentDiv_" + comment.cId + "'></div>";
@@ -82,11 +83,11 @@ $(document).on("click", ".reCommentBtn", function() {
     		html += 	"<b id='commentWriter_" + comment.cId + "' >" + comment.user + "</b>";
     		html += 	"<span style='float:right;' align='right' id='commentDate'> " + comment.createdDate + " </span>";
     		html += 	"<div class='mb-1 comment_container' >";
-    		html += 		"<h5 id='commentText_"+ comment.cId +"'>" + comment.content + "</h5>";
+    		html += 		"<h5 id='commentText_"+ comment.cId +"'>re:&nbsp" + comment.content + "</h5>";
     		html += 	"</div>";
     		if(username == comment.user  || role == "ADMIN") {
-	            html += 	"<span style='cursor: pointer; color: blue' class='commentMod' data-toggle='modal' data-target='#myModal'>Edit </span>";
-	            html += 	"<span style='cursor: pointer; color: blue' class='commentDel'>Delete</span>";
+	            html += 	"<span style='cursor: pointer;' class='commentMod' data-toggle='modal' data-target='#myModal'>Edit </span>";
+	            html += 	"<span style='cursor: pointer;' class='commentDel'>Delete</span>";
     		}
     		html += 	"<hr>";
     		html += "</div>";
@@ -96,8 +97,8 @@ $(document).on("click", ".reCommentBtn", function() {
         
     	if(username != "") {
 	        html += "<input type='hidden' id='reply_user' value='"+ username +"'>";
-	    	html += "<input style='width: 90%' id='reComment_"+cId+"' class='reComment' name='reComment' placeholder='Write reply...'>";
-	        html += "<button type='button' class='btn btn-primary mx-2 reCommentSubmit'>Add</button>";
+	    	html += "<input style='width: 90%' id='reComment_"+cId+"' class='reComment' name='reComment' maxlength='200' placeholder='200 characters only'>&nbsp&nbsp";
+	        html += "<button type='button' class='reCommentSubmit'>Add</button>";
     	}
     	_this.siblings(".reCommentDiv").html(html);
     })

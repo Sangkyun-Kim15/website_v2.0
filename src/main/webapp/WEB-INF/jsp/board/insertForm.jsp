@@ -19,6 +19,7 @@
 <script src="//cdn.ckeditor.com/4.20.1/full/ckeditor.js"></script>
  -->
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/board/content_limit.js"></script>
 </head>
 <body>
 	<jsp:include page="../include/menu.jsp" />
