@@ -271,17 +271,13 @@ ul.social-buttons li a {
 }
 
 </style>
-<!-- jQuery Version 1.11.0 -->
-<script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
+<!-- jQuery Version 3.6.0 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script>
-<script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script>
-<!-- Contact Form JavaScript -->
-<script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jqBootstrapValidation.js"></script>
-<script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/contact_me.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- get_context_path.js file -->
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/include/get_context_path.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/contact/contact.js"></script>
 <body>
 <!-- Navigation -->
 	<nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
@@ -413,50 +409,44 @@ ul.social-buttons li a {
 	
 	<!-- contact Section -->
 	<section id="contact" class="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="section-heading">Contact Us</h2>
-					<h3 class="section-subheading text-muted">For the more information...</h3>
-				</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">Contact Us</h2>
+				<h3 class="section-subheading text-muted">For more information...</h3>
 			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<form name="sentMessage" id="contactForm" novalidate="">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" class="form-control"
-										placeholder="Your Name *" id="name" required=""
-										data-validation-required-message="Please enter your name.">
-									<p class="help-block text-danger"></p>
-								</div>
-								<div class="form-group">
-									<input type="email" class="form-control"
-										placeholder="Your Email *" id="email" required=""
-										data-validation-required-message="Please enter your email address.">
-									<p class="help-block text-danger"></p>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<textarea class="form-control" placeholder="Your Message *"
-										id="message" required=""
-										data-validation-required-message="Please enter a message."></textarea>
-									<p class="help-block text-danger"></p>
-								</div>
-							</div>
-							<div class="clearfix"></div>
-							<div class="col-lg-12 text-center">
-								<div id="success"></div>
-								<button type="submit" class="btn btn-xl">Send Message</button>
-							</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Name *" id="name" maxlength='50' required>
+							<p class="help-block text-danger"></p>
 						</div>
-					</form>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Your Email *" id="email" maxlength='50' required>
+							<p class="help-block text-danger"></p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<textarea class="form-control" placeholder="Your Message *" id="message" maxlength='500' required></textarea>
+							<p class="help-block text-danger"></p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-lg-12 text-center">
+						<div id="success"></div>
+						<button class="btn btn-xl" onclick="sendMessage()">Send Message</button>
+					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
+<div id="responseMessage"></div>
+
 	
 	<footer>
 		<div class="container">

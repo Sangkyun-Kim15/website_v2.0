@@ -9,6 +9,7 @@
 		<typeAlias alias="comment" type="kr.co.mlec.VO.CommentVO" />
 		<typeAlias alias="account" type="kr.co.mlec.VO.AccountVO" />
 		<typeAlias alias="criteria" type="kr.co.mlec.VO.CriteriaVO" />
+		<typeAlias alias="contact" type="kr.co.mlec.VO.ContactVO" />
 	</typeAliases>
 
 </configuration>
