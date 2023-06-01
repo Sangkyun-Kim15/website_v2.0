@@ -20,7 +20,7 @@ function sendMessage() {
 		success : function(response) {
 			// Handle the success response
 			console.log('Message sent successfully!');
-			$("#responseMessage").html("Message sent successfully!");
+			alert("Message sent successfully!");
 			$("#name").val("");
 			$("#email").val("");
 			$("#message").val("");
@@ -28,8 +28,7 @@ function sendMessage() {
 		error : function(error) {
 			// Handle the error response
 			console.log('An error occurred while sending the message.');
-			$("#responseMessage").html(
-					"An error occurred while sending the message.");
+			alert("An error occurred while sending the message.");
 		}
 	});
 }
