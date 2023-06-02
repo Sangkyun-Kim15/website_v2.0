@@ -56,11 +56,11 @@ a {
 </head>
 <body>
 	<video
-		src="<%=request.getContextPath() %>/video/stream.do?filename=coverr-golden-gate-bridge-at-sunset-5420-original.mp4"
+		src="./video/stream.do?filename=coverr-golden-gate-bridge-at-sunset-5420-original.mp4"
 		muted autoplay loop></video>
 	<div id="content">
 		<h2 id="title">Sangkyun's portfolio</h2>
-		<a href="/main.do">&nbsp;&nbsp;&nbsp;visit&nbsp;&nbsp;&nbsp;</a><br />
+		<a href="./main.do">&nbsp;&nbsp;&nbsp;visit&nbsp;&nbsp;&nbsp;</a><br />
 	</div>
 </body>
 </html>
