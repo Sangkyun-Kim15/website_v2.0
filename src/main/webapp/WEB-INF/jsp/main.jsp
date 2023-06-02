@@ -276,8 +276,8 @@ ul.social-buttons li a {
 <!-- Bootstrap Core JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <!-- get_context_path.js file -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/include/get_context_path.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/contact/contact.js"></script>
+<script type="text/javascript" src="./resources/js/include/get_context_path.js"></script>
+<script type="text/javascript" src="./resources/js/contact/contact.js"></script>
 <body>
 <!-- Navigation -->
 	<nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
@@ -340,7 +340,7 @@ ul.social-buttons li a {
 				<div class="col-md-4 col-sm-6 portfolio-item">
 					<a href="#portfolioModal6" class="portfolio-link"
 						data-toggle="modal"> <img
-						src="${pageContext.request.contextPath}/resources/img/blog_img.png"
+						src="./resources/img/blog_img.png"
 						class="img-responsive" alt="">
 					</a>
 					<div class="portfolio-caption">
@@ -373,7 +373,7 @@ ul.social-buttons li a {
 				<div class="col-md-4 col-sm-6 portfolio-item">
 					<a href="#portfolioModal5" class="portfolio-link"
 						data-toggle="modal"> <img
-						src="${pageContext.request.contextPath}/resources/img/maze.png"
+						src="./resources/img/maze.png"
 						class="img-responsive" alt="">
 					</a>
 					<div class="portfolio-caption">
