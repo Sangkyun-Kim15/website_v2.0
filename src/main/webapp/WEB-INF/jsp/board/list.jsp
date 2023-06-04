@@ -24,15 +24,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 <!-- boardDetail.js file -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/board/boardDetail.js"></script>
+<script type="text/javascript" src="../resources/js/board/boardDetail.js"></script>
 <!-- commen_list.js file -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/comment/comment_list.js"></script>
+<script type="text/javascript" src="../resources/js/comment/comment_list.js"></script>
 <!-- comment.js file -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/comment/comment.js"></script>
+<script type="text/javascript" src="../resources/js/comment/comment.js"></script>
 <!-- modal.js file -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/comment/comment_update_modal.js"></script>
+<script type="text/javascript" src="../resources/js/comment/comment_update_modal.js"></script>
 <!-- get_context_path.js file -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/include/get_context_path.js"></script>
+<script type="text/javascript" src="../resources/js/include/get_context_path.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -79,7 +79,7 @@ $(document).ready(function() {
 			<c:when test="${empty sessionScope.username}">
 			</c:when>
 			<c:otherwise>
-				<a class="board-add-btn" href="<%=request.getContextPath()%>/board/insertForm.do">post</a>
+				<a class="board-add-btn" href="../board/insertForm.do">post</a>
 			</c:otherwise>
 		</c:choose>
 

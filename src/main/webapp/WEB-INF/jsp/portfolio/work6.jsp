@@ -25,7 +25,7 @@
 							<h2>Blog</h2>
 							<p class="item-intro text-muted">Java web application</p>
 							<img class="img-responsive"
-								src="${pageContext.request.contextPath}/resources/img/blog_img.png"
+								src="./resources/img/blog_img.png"
 								alt="">
 							<div class="about">
 								<h3>About</h3>
@@ -43,7 +43,7 @@
 								data-dismiss="modal">
 								<i class="fa fa-times"></i> Close Project
 							</button>&nbsp;
-							<a href="<%=request.getContextPath()%>/board/select.do" target="_blank">Website</a>&nbsp;
+							<a href="./board/select.do" target="_blank">Website</a>&nbsp;
 							<a href="https://github.com/Sangkyun-Kim15/website_v2.0" target="_blank">Code</a>
 						</div>
 					</div>
