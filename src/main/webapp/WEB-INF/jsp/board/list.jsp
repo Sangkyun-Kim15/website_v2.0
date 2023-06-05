@@ -10,7 +10,8 @@
 
 
 </style>
-<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<!-- jQuery Version 3.6.0 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
