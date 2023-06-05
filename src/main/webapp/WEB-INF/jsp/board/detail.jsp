@@ -7,7 +7,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<!-- jQuery Version 3.6.0 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <!-- Optional theme -->
@@ -15,13 +16,13 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <!-- modal.js file -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/comment/comment_update_modal.js"></script>
+<script type="text/javascript" src="../resources/js/comment/comment_update_modal.js"></script>
 <!-- comment.js file -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/comment/comment.js"></script>
+<script type="text/javascript" src="../resources/js/comment/comment.js"></script>
 <!-- comment.js file -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/comment/comment_reply_list_by_user.js"></script>
+<script type="text/javascript" src="../resources/js/comment/comment_reply_list_by_user.js"></script>
 <!-- get_context_path.js file -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/include/get_context_path.js"></script>
+<script type="text/javascript" src="../resources/js/include/get_context_path.js"></script>
 <script>
 	$(document).ready(function() {
 		commentReplyListByUser();
@@ -53,8 +54,8 @@
  <div>
  	<c:choose>
 		<c:when test="${sessionScope.username eq board.writer or sessionScope.role eq 'ADMIN'}">
-	 		<a href="<%=request.getContextPath() %>/board/updateForm.do?boardNo=${board.boardNo}">Update</a>
-	 		<a href="<%=request.getContextPath() %>/board/delete.do?boardNo=${board.boardNo}&pageNum=${cri.pageNum}&amount=${cri.amount}">Delete</a>
+	 		<a href="../board/updateForm.do?boardNo=${board.boardNo}">Update</a>
+	 		<a href="../board/delete.do?boardNo=${board.boardNo}&pageNum=${cri.pageNum}&amount=${cri.amount}">Delete</a>
 		</c:when>
 		<c:otherwise>
 		</c:otherwise>
@@ -65,7 +66,7 @@
 		<c:when test="${empty sessionScope.username}">
 		</c:when>
 		<c:otherwise>
-			<form method="post" action="<%=request.getContextPath()%>/comment/insert.do">
+			<form method="post" action="../comment/insert.do">
 				<input type="hidden" name="pageNum" value='<c:out value="${cri.pageNum}"/>' class="form-control"/>
 				<input type="hidden" name="amount" value='<c:out value="${cri.amount}"/>' class="form-control"/>
 				<input type="hidden" name="keyword" value='<c:out value="${cri.keyword}"/>' class="form-control"/>

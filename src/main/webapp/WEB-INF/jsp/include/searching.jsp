@@ -16,7 +16,7 @@
 		url += "/board/select.do";
 	}
 	%>
-	<form style="float: right" method="post" action="<%=request.getContextPath()%><%=url %>">
+	<form style="float: right" method="post" action="..<%=url %>">
 		<input type="text" class="search-input" name="keyword" value="${paging.cri.keyword}">
 		<button class="search-btn" type="submit">Search</button>
 	</form>

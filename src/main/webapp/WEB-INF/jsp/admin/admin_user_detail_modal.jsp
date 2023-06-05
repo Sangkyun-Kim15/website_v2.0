@@ -5,19 +5,19 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<!-- jQuery Version 3.6.0 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <!-- Latest compiled and minified JavaScript -->
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <!-- comment.js file -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/comment/comment.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/comment/comment_reply_list_by_user.js"></script>
+<script type="text/javascript" src="../resources/js/comment/comment.js"></script>
+<script type="text/javascript" src="../resources/js/comment/comment_reply_list_by_user.js"></script>
 <!-- get_context_path.js file -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/include/get_context_path.js"></script>
+<script type="text/javascript" src="../resources/js/include/get_context_path.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	commentReplyListByUser();
