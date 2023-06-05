@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="$../resources/css/board_list.css">
+<link rel="stylesheet" href="../resources/css/board_list.css">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <!-- Optional theme -->
@@ -41,7 +41,7 @@ $(document).ready(function() {
 });
 </script>
 </head>
-<body style="background-image: url('${pageContext.request.contextPath}/resources/img/background.png');">
+<body style="background-image: url('../resources/img/background.png');">
 	<jsp:include page="../include/menu.jsp" />
 	<jsp:include page="../board/comment_update_modal.jsp" />
 	
