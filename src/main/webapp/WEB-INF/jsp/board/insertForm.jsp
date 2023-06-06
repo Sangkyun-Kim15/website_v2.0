@@ -51,7 +51,7 @@
     	</div>
 	</form>
 	<script type="text/javascript">
-		CKEDITOR.replace('content', {filebrowserUploadUrl: "board/imageUpload.do"});
+		CKEDITOR.replace('content', {filebrowserUploadUrl: "imageUpload.do"});
 	</script>
 </body>
 </html>
