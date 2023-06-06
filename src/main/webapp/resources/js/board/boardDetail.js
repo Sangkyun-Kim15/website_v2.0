@@ -53,8 +53,8 @@ function boardDetail(input) {
 		html += 		"<ul>";
 		html += 			"<li class='published-date'><h5>"+ response.regDate +"</h5></li>";
 		if(username == response.writer || role == "ADMIN") {
-			html += 		"<li class='board_update'><a href=" + getContextPath() + "/board/updateForm.do?boardNo="+ data +"&pageNum=" + pageNum +"&amount=" + amount +"&keyword=" + keyword +">Update</a></li>&nbsp&nbsp";
-			html += 		"<li class='board_delete'><a href=" + getContextPath() + "/board/delete.do?boardNo="+ data +"&pageNum=" + pageNum +"&amount=" + amount +"&keyword=" + keyword +">Delete</a></li>";
+			html += 		"<li class='board_update'><a href=" + getContextPath() + "../board/updateForm.do?boardNo="+ data +"&pageNum=" + pageNum +"&amount=" + amount +"&keyword=" + keyword +">Update</a></li>&nbsp&nbsp";
+			html += 		"<li class='board_delete'><a href=" + getContextPath() + "../board/delete.do?boardNo="+ data +"&pageNum=" + pageNum +"&amount=" + amount +"&keyword=" + keyword +">Delete</a></li>";
 			
 		} else {
 			html += 		"<li></li>";
