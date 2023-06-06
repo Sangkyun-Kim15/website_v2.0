@@ -154,7 +154,7 @@ public class BoardController {
 			
 			//String callback = req.getParameter("CKEditorFuncNum");
 			printWriter = res.getWriter();
-			String fileUrl = req.getContextPath() + "/board/imageSubmit.do?uid=" + uid + "&fileName=" + fileName;
+			String fileUrl = "/board/imageSubmit.do?uid=" + uid + "&fileName=" + fileName;
 			
 			JsonObject json = new JsonObject();
 			json.addProperty("filename", fileName);
