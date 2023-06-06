@@ -18,7 +18,7 @@ function commentReplyListByUser() {
 				html += "<div>";
 				if(board.isDeleted == 'N') {
 					postNum++;
-					html += "<a href='../../board/detailAdmin.do?boardNo="+ board.boardNo +"' target='_blank'><h5 style='display: inline'>" + board.title +"</h5></a>";
+					html += "<a href='/website_v2.0/board/detailAdmin.do?boardNo="+ board.boardNo +"' target='_blank'><h5 style='display: inline'>" + board.title +"</h5></a>";
 				} else {
 					html += "<h5 style='display: inline'>" + board.title +"</h5>";
 				}
