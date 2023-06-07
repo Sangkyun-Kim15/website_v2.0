@@ -53,8 +53,8 @@ function boardDetail(input) {
 		html += 		"<ul>";
 		html += 			"<li class='published-date'><h5>"+ response.regDate +"</h5></li>";
 		if(username == response.writer || role == "ADMIN") {
-			html += 		"<li class='board_update'><a href=" + getContextPath() + "../board/updateForm.do?boardNo="+ data +"&pageNum=" + pageNum +"&amount=" + amount +"&keyword=" + keyword +">Update</a></li>&nbsp&nbsp";
-			html += 		"<li class='board_delete'><a href=" + getContextPath() + "../board/delete.do?boardNo="+ data +"&pageNum=" + pageNum +"&amount=" + amount +"&keyword=" + keyword +">Delete</a></li>";
+			html += 		"<li class='board_update'><a href=../board/updateForm.do?boardNo="+ data +"&pageNum=" + pageNum +"&amount=" + amount +"&keyword=" + keyword +">Update</a></li>&nbsp&nbsp";
+			html += 		"<li class='board_delete'><a href=../board/delete.do?boardNo="+ data +"&pageNum=" + pageNum +"&amount=" + amount +"&keyword=" + keyword +">Delete</a></li>";
 			
 		} else {
 			html += 		"<li></li>";
@@ -63,7 +63,7 @@ function boardDetail(input) {
 		html += 		"</ul>";
 		html += 		"<br>";
 		if(username != "") {
-			html += 	"<form method='post' action='"+ getContextPath() +"/comment/insert.do'>";
+			html += 	"<form method='post' action='../comment/insert.do'>";
 			html += 		"<input type='hidden' name='bId' value='"+ data + "'class='form-control'/>";
 			html += 		"<input type='hidden' name='pageNum' value='"+ pageNum + "'class='form-control'/>";
 			html += 		"<input type='hidden' name='amount' value='"+ amount + "'class='form-control'/>";
