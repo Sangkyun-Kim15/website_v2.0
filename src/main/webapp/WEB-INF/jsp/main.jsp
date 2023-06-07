@@ -70,9 +70,9 @@
 	<section id="about"class="about">
 		<div class="about-content">
 			<h2>About</h2>
-			<p>I am Sangkyun, a software developer from the state of California. I am happy when my code work stably. 
-			I like a clear message. My favorite language is Java and Python. I love to watch movies. I have watched more
-			than 1000 movies.
+			<p>I am Sangkyun, a software developer from the state of California. I got B.S. computer science at Rutgers University. I am happy when my code work stably. I love to learn new things regarding computer science.
+			My favorite language is Java and Python. I am interested in back-end. Recently, I set up my home server for testing web application and learning Linux system . I love to watch movies. I have watched more
+			than 1000 movies. Playing classic computer game is one of my hobbies.
 			</p>
 		</div>
 	</section>

@@ -1,5 +1,7 @@
 package kr.co.mlec.Board;
 
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,6 +13,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.UUID;
 
+import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -146,11 +149,27 @@ public class BoardController {
 					e.getStackTrace();
 				}
 			}
-			// save image
-			out = new FileOutputStream(new File(ckUploadPath));
-			out.write(bytes);
-			out.flush();
-
+			
+			// Resize image if width exceeds 850 pixels
+			BufferedImage image = ImageIO.read(upload.getInputStream());
+			int originalWidth = image.getWidth();
+			if(originalWidth > 850) {
+				int originalHeight = image.getHeight();
+	            int newWidth = 850;
+	            int newHeight = (int) (((double) originalHeight / originalWidth) * newWidth);
+	            BufferedImage resizedImage = new BufferedImage(newWidth, newHeight, image.getType());
+	            Graphics2D g = resizedImage.createGraphics();
+	            g.drawImage(image, 0, 0, newWidth, newHeight, null);
+	            g.dispose();
+	            
+	            // Save resized image
+	            ImageIO.write(resizedImage, "jpg", new File(ckUploadPath));
+			} else {
+				// save image
+				out = new FileOutputStream(new File(ckUploadPath));
+				out.write(bytes);
+				out.flush();
+			}
 			
 			//String callback = req.getParameter("CKEditorFuncNum");
 			printWriter = res.getWriter();

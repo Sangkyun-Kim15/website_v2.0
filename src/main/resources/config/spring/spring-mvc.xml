@@ -64,7 +64,13 @@
 		class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg ref="sqlSessionFactory" />
 	</bean>
-
+	
+	<bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+    	<property name="corePoolSize" value="10" />
+    	<property name="maxPoolSize" value="50" />
+    	<property name="queueCapacity" value="100" />
+	</bean>
+	
 	<mvc:annotation-driven>
 		<mvc:message-converters>
 			<bean
@@ -86,6 +92,7 @@
 			</bean>
 
 		</mvc:message-converters>
+		<mvc:async-support task-executor="taskExecutor" default-timeout="10000" />
 	</mvc:annotation-driven>
 
 	<mvc:view-controller path="/main.do"
