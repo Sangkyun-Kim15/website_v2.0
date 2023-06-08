@@ -24,7 +24,7 @@
 							<p class="item-intro text-muted">Lorem ipsum dolor sit amet
 								consectetur.</p>
 							<img class="img-responsive"
-								src="${pageContext.request.contextPath}/resources/img/maze.png"
+								src="./resources/img/maze.png"
 								alt="">
 							<div class="about">
 								<h3>About</h3>

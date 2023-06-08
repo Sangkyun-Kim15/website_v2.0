@@ -29,8 +29,8 @@
 								alt="">
 							<div class="about">
 								<h3>About</h3>
-								<p>This is a personal project. Java web application. This is version 2.0. 
-								In this version, I set the domain, setting the home server for the hosting and the DB.
+								<p>This is a personal project. Java web application. This is version 2.0.
+								In this version, I set the domain and the home server for the hosting and the DB.
 								Also, I used Jenkins and set the pipeline for CI/CD.
 								</p>
 								<br/>
@@ -40,7 +40,7 @@
 							</div>
 							<div class="built">
 								<h3>Built</h3>
-								<p>Java, Spring, Maven, JSTL, Jquuery, BootStrap, mybatis, MySQL, ApacheTomcat, Jenkins</p>
+								<p>Java, Spring, Maven, Jquery, BootStrap, mybatis, MySQL, ApacheTomcat, Jenkins, CSS, HTML</p>
 							</div>
 							<ul class="list-inline">
 								<li>Date: July 2014</li>
