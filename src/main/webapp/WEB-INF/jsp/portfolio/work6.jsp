@@ -29,7 +29,14 @@
 								alt="">
 							<div class="about">
 								<h3>About</h3>
-								<p>This is a personal project. Java web application.</p>
+								<p>This is a personal project. Java web application. This is version 2.0. 
+								In this version, I set the domain, setting the home server for the hosting and the DB.
+								Also, I used Jenkins and set the pipeline for CI/CD.
+								</p>
+								<br/>
+								<p>The next version is in progress. In this version, I plan to use Junit to practice test coding, using React to explore new skills in javascript.</p>
+								<h4>Features</h4>
+								<p>Posting, comment, reply, searching, paging, and admin page to manage all the data in the blog</p>
 							</div>
 							<div class="built">
 								<h3>Built</h3>
