@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>Portfolio</title>
 </head>
 <body>
 	<div class="portfolio-modal modal fade" id="portfolioModal3"
@@ -36,8 +36,7 @@
 								<p>Java</p>
 							</div>
 							<ul class="list-inline">
-								<li>Date: July 2014</li>
-								<li>Category: Graphic Design</li>
+								<li>Date: 2020</li>
 							</ul>
 							<button type="button" class="btn btn-xl"
 								data-dismiss="modal">

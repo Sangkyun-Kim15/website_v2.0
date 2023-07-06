@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>Portfolio</title>
 <script type="text/javascript">
 </script>
 </head>
@@ -43,8 +43,7 @@
 								<p>Java, Spring, Maven, Jquery, BootStrap, mybatis, MySQL, ApacheTomcat, Jenkins, CSS, HTML</p>
 							</div>
 							<ul class="list-inline">
-								<li>Date: July 2014</li>
-								<li>Category: Graphic Design</li>
+								<li>Date: 2023</li>
 							</ul>
 							<button type="button" class="btn btn-xl"
 								data-dismiss="modal">

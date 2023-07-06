@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>Portfolio</title>
 </head>
 <body>
 	<div class="portfolio-modal modal fade" id="portfolioModal1"
@@ -46,8 +46,7 @@
 							<h3>Built</h3>
 							<p>Python, Pygame, NumPy</p>
 							<ul class="list-inline">
-								<li>Date: July 2014</li>
-								<li>Category: Graphic Design</li>
+								<li>Date: July 2021</li>
 							</ul>
 							<button type="button" class="btn btn-xl"
 								data-dismiss="modal">
