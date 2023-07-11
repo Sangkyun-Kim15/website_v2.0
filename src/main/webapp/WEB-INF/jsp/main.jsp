@@ -86,7 +86,7 @@
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 class="section-heading">Portfolio</h2>
-					<h3 class="section-subheading text-muted">This is my previous work.</h3>
+					<h3 class="section-subheading text-muted">Previous work.</h3>
 				</div>
 			</div>
 			<div class="row">
