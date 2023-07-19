@@ -62,7 +62,7 @@
 	<header>
 		<div id="intro" class="intro">
 			<h1>sangkyun kim</h1>
-			<h2>software developer &amp; Cinéphile</h2>
+			<h2>software developer</h2>
 		</div>
 	</header>
 
