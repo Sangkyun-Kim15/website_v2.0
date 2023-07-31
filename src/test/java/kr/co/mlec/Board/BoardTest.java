@@ -24,6 +24,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -72,22 +73,9 @@ public class BoardTest {
 
 	@Test
 	public void testBoardSelect() throws Exception {
-	    // Create test data
-	    List<BoardVO> list = new ArrayList<>();
-	    BoardVO board1 = new BoardVO();
-	    board1.setBoardNo(1);
-	    board1.setTitle("Test Title 1");
-	    board1.setWriter("Test Writer 1");
-	    board1.setContent("Test Content 1");
-
-	    BoardVO board2 = new BoardVO();
-	    board2.setBoardNo(2);
-	    board2.setTitle("Test Title 2");
-	    board2.setWriter("Test Writer 2");
-	    board2.setContent("Test Content 2");
-
-	    list.add(board1);
-	    list.add(board2);
+		// Read test data from file
+		ObjectMapper objectMapper = new ObjectMapper();
+	    List<BoardVO> list = Arrays.asList(objectMapper.readValue(new File("src/test/resources/testBoardSelectData.json"), BoardVO[].class));
 
 	    // Create CriteriaVO instance
 	    CriteriaVO cri = new CriteriaVO(1, 10);

@@ -1,0 +1,26 @@
+[
+  {
+    "boardNo": 1,
+    "title": "Test Title 1",
+    "writer": "Test Writer 1",
+    "content": "Test Content 1"
+  },
+  {
+    "boardNo": 2,
+    "title": "Test Title 2",
+    "writer": "Test Writer 2",
+    "content": "Test Content 2"
+  },
+  {
+    "boardNo": 3,
+    "title": "테스트 제목3",
+    "writer": "테스트 글쓴이3",
+    "content": "테스트 내용3"
+  },
+  {
+    "boardNo": 4,
+    "title": "Test Title 4",
+    "writer": "Test Writer 4",
+    "content": "Test Content 4"
+  }
+]
