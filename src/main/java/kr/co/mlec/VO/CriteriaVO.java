@@ -1,5 +1,7 @@
 package kr.co.mlec.VO;
 
+import java.util.Objects;
+
 public class CriteriaVO {
 	// current page number
 	private int pageNum;
@@ -25,6 +27,22 @@ public class CriteriaVO {
 		this.pageNum = pageNum;
 		this.amount = amount;
 		this.skip = (pageNum - 1) * amount;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+	    if (this == obj) {
+	        return true;
+	    }
+	    if (obj == null || getClass() != obj.getClass()) {
+	        return false;
+	    }
+	    CriteriaVO criteriaVO = (CriteriaVO) obj;
+	    return pageNum == criteriaVO.pageNum &&
+	           amount == criteriaVO.amount &&
+	           skip == criteriaVO.skip &&
+	           boardNo == criteriaVO.boardNo &&
+	           Objects.equals(keyword, criteriaVO.keyword); // Objects.equals handles null
 	}
 
 	public int getPageNum() {

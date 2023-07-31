@@ -1,5 +1,7 @@
 package kr.co.mlec.VO;
 
+import java.util.Objects;
+
 public class PagingVO {
 	private int startPage;
 	private int endPage;
@@ -23,6 +25,23 @@ public class PagingVO {
 		this.prev = this.startPage > 1;
 		
 		this.next = this.endPage < realEnd;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+	    if (this == obj) {
+	        return true;
+	    }
+	    if (obj == null || getClass() != obj.getClass()) {
+	        return false;
+	    }
+	    PagingVO pagingVO = (PagingVO) obj;
+	    return startPage == pagingVO.startPage &&
+	           endPage == pagingVO.endPage &&
+	           prev == pagingVO.prev &&
+	           next == pagingVO.next &&
+	           total == pagingVO.total &&
+	           cri.equals(pagingVO.cri); // Ensure cri also has a proper equals method
 	}
 	
 	public int getStartPage() {
