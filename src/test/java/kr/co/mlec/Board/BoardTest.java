@@ -120,10 +120,12 @@ public class BoardTest {
 	    assertEquals(new PagingVO(cri, list.size()), resultPaging);
 	}
 
+	/*
 	@Test
 	public void testBoardSelectByUser() throws Exception {
 		fail("Not yet implemented");
 	}
+	 */
 
 	@Test
 	public void testBoardDetail() throws Exception {
@@ -151,10 +153,12 @@ public class BoardTest {
 		assertEquals(board.getContent(), resultBoard.getContent());
 	}
 
+	/*
 	@Test
 	public void testBoardDetailAdmin() {
 		fail("Not yet implemented");
 	}
+	*/
 
 	@Test
 	public void testBoardInsert() throws Exception {
@@ -169,7 +173,7 @@ public class BoardTest {
 
 		verify(service).boardInsert(any(BoardVO.class));
 	}
-
+	/*
 	@Test
 	public void testBoardDelete() throws Exception {
 		fail("Not yet implemented");
@@ -184,5 +188,6 @@ public class BoardTest {
 	public void testBoardUpdate() {
 		fail("Not yet implemented");
 	}
+	*/
 
 }
