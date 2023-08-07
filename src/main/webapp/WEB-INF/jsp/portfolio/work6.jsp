@@ -34,13 +34,13 @@
 								Also, I used Jenkins and set the pipeline for CI/CD.
 								</p>
 								<br/>
-								<p>The next version is in progress. In this version, I plan to use Junit to practice test coding, using React to explore new skills in javascript.</p>
+								<p>The next version is in progress. In this version, I plan to use use React to explore new skills in javascript.</p>
 								<h4>Features</h4>
 								<p>Posting, comment, reply, searching, paging, and admin page to manage all the data in the blog</p>
 							</div>
 							<div class="built">
 								<h3>Built</h3>
-								<p>Java, Spring, Maven, Jquery, BootStrap, mybatis, MySQL, ApacheTomcat, Jenkins, CSS, HTML</p>
+								<p>Java, Spring Framework, Maven, Jquery, BootStrap, mybatis, MySQL, ApacheTomcat, Jenkins, CSS, HTML, Junit, Mockito</p>
 							</div>
 							<ul class="list-inline">
 								<li>Date: 2023</li>
