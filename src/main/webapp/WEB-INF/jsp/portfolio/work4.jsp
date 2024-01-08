@@ -21,8 +21,7 @@
 						<div class="modal-body">
 							<!-- Project Details Go Here -->
 							<h2>TRAIN RESERVATION SYSTEM</h2>
-							<p class="item-intro text-muted">Lorem ipsum dolor sit amet
-								consectetur.</p>
+							<p class="item-intro text-muted">Java web Application</p>
 							<img class="img-responsive"
 								src="https://sangkyun-kim15.github.io/assets/img/train.png"
 								alt="">

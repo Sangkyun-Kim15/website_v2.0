@@ -21,8 +21,7 @@
 						<div class="modal-body">
 							<!-- Project Details Go Here -->
 							<h2>IMAGE COLORIZER</h2>
-							<p class="item-intro text-muted">Lorem ipsum dolor sit amet
-								consectetur.</p>
+							<p class="item-intro text-muted">Python Application</p>
 							<img class="img-responsive"
 								src="https://sangkyun-kim15.github.io/assets/img/advanced1.png"
 								alt="">
