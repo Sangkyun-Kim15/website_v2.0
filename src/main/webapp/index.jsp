@@ -8,19 +8,17 @@
 <title>Insert title here</title>
 <style type="text/css">
 video {
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto%;
-	z-index: -100;
-	background-size: cover;
+    width: 100%;
+    height: auto;
 }
 
 #content {
-	padding: 350px 90px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 #title {
