@@ -90,7 +90,7 @@ a {
 <body>
     <video
         src="./video/stream.do?filename=coverr-golden-gate-bridge-at-sunset-5420-original.mp4"
-        muted autoplay loop></video>
+        muted autoplay loop playsinline></video>
     <div id="content">
         <h2 id="title">Sangkyun's portfolio</h2>
         <a href="./main.do">visit</a><br />
